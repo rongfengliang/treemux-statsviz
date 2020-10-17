@@ -5,7 +5,7 @@
 
 
 ```code
-go get github.com/rongfengliang/statsviz-pprof
+go get github.com/rongfengliang/treemux-statsviz
 router := treemux.New()
 pprof.RouterpprofRegister(router)
 

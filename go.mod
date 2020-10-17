@@ -1,4 +1,4 @@
-module github.com/rongfengliang/statsviz-pprof
+module github.com/rongfengliang/treemux-statsviz
 
 go 1.14
 
