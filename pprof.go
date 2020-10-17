@@ -11,8 +11,8 @@ const (
 	defaultPrefix string = "/debug/statsviz"
 )
 
-// RouterpprofRegister for treemux
-func RouterpprofRegister(rg *treemux.TreeMux) {
+// RouterstatsvizRegister for treemux
+func RouterStatsvizRegister(rg *treemux.TreeMux) {
 	prefixRouter := rg.NewGroup(defaultPrefix)
 	prefixRouter.GET("/", pprofHandler(statsviz.Index.ServeHTTP))
 	prefixRouter.GET("/*path", pprofHandler(statsviz.Index.ServeHTTP))
